@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="blog.css">
+        <script src="StackBlur.js"></script>
+        <script src="blog.js"></script>
+    </head>
+    <body>
+        <video autoplay class="hidden"></video>
+        <canvas class="canvas"></canvas>
+
+        <div class="content">
+            <textarea class="editor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat enim nisl, vitae scelerisque lacus feugiat vitae. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis accumsan eros sed dignissim iaculis. Praesent in est lacus. Nulla faucibus aliquam imperdiet. Quisque accumsan vehicula orci vitae luctus. Curabitur mattis nunc ac urna lobortis, non viverra elit ultrices. Quisque in ligula elit.</textarea>
+        </div>
+
+        <script>
+            var bg = new Background(
+                document.querySelector('video.hidden'),
+                document.querySelector('canvas.canvas')
+            );
+        </script>
+    </body>
+</html>
